@@ -1,0 +1,61 @@
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  opacity: 0.85;
+  z-index: -1;
+}
+#title {
+  height: 40vh;
+  font: 400 40px 'Rock Salt';
+  color: black;
+  text-shadow: 3px 3px 1px white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#buttons {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+button {
+  font: 700 20px Arial;
+  width: 100px;
+  margin: 2%;
+  background-color: rgba(0, 0, 0, 0.425);
+  color:white;
+  text-shadow: 2px 2px 1px  rgba(255, 0, 0, 0.824);
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+button:hover {
+  /* box-shadow: 2px 2px 5px white , -2px -2px 5px white; */
+  opacity: 0.8;
+}
+.subtitle {
+  font: 700 10px arial;
+  color: white;
+  text-shadow: none;
+}
+
+@media (max-width: 1020px) {
+  img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  #title {
+    height: 30vh;
+  }
+}
